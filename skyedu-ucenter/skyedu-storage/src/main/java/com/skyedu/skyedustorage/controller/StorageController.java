@@ -1,6 +1,7 @@
 package com.skyedu.skyedustorage.controller;
 
 
+import com.skyedu.skyeducommon.response.ResponseResult;
 import com.skyedu.skyedustorage.service.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,7 +23,7 @@ public class StorageController {
      * @return
      */
     @RequestMapping("decrease")
-    public String decrease(@RequestParam("productId") Long productId,@RequestParam("count") Integer count){
+    public String decrease(@RequestParam("productId") Long productId,@RequestParam("count") Integer count) throws ResponseResult {
         storageServiceImpl.decrease(productId,count);
         return "Decrease storage success";
     }

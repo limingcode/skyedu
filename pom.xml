@@ -6,6 +6,8 @@
     <version>2.1.7</version>
     <modules>
         <module>skyedu-ucenter</module>
+        <module>skyeud-common</module>
+        <module>skyedu-model</module>
     </modules>
     <packaging>pom</packaging>
     <parent>

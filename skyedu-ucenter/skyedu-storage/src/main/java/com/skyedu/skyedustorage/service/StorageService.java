@@ -1,6 +1,8 @@
 package com.skyedu.skyedustorage.service;
 
 
+import com.skyedu.skyeducommon.response.ResponseResult;
+
 public interface StorageService {
 
     /**
@@ -9,5 +11,6 @@ public interface StorageService {
      * @param count 数量
      * @return
      */
-    void decrease(Long productId, Integer count);
+    
+    void decrease(Long productId, Integer count) throws ResponseResult;
 }

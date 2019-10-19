@@ -7,9 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="eureka-server" />
+        <module name="skyedu-account" />
+        <module name="skyedu-model" />
         <module name="skyedu-order" />
         <module name="skyedu-storage" />
-        <module name="skyedu-account" />
+        <module name="skyeud-common" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
